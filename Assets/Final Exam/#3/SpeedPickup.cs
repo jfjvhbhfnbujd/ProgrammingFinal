@@ -15,10 +15,23 @@ using UnityEngine;
  *      - Change the speed back to the originalSpeed
  * 
  */
-public class SpeedPickup : MonoBehaviour
+
+public class SpeedPickup : PickUp
 {
+ 
     public float originalSpeed;
     public float boostedSpeed;
+    public override void Activate()
+    {
+        base.Activate();
 
+        originalSpeed = 1.5f;
+        boostedSpeed = 3f;
+        
+
+
+
+
+    }
 
 }
